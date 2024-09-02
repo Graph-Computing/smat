@@ -1,4 +1,10 @@
-CXX       =g++
+#g++ -fpermissive -Wl,--no-as-needed -m64 -std=c++11 -I include 
+#	-o obj/general/reorder_matrix.o 
+#	-c test/general/reorder_matrix.cpp
+#g++ -fpermissive -Wl,--no-as-needed -m64 -std=c++11 -I include 
+#	-o programs/general/reorder_matrix 
+#	obj/general/reorder_matrix.o obj/general/utilities.o obj/general/blocking.o obj/general/csr.o obj/general/vbr.oCXX       =g++
+
 CXXFLAGS  =  -fpermissive -Wl,--no-as-needed -m64 -std=c++11
 INCLUDE = -I include
 
